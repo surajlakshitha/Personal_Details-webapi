@@ -43,6 +43,7 @@ export class AddEditPedComponent implements OnInit {
     });
   }
 
+  // creating a method for add person
   addPerson(){
     var val = {PersonId:this.PersonId,
       PersonName:this.PersonName,
@@ -58,6 +59,7 @@ export class AddEditPedComponent implements OnInit {
     });
   }
 
+    // creating a method for update person
   updatePerson(){
     var val = {PersonId:this.PersonId,
       PersonName:this.PersonName,
@@ -74,6 +76,7 @@ export class AddEditPedComponent implements OnInit {
   }
 
 
+    // creating a method for upload person photo
   uploadPhoto(event:any){
     var file=event.target.files[0];
     const formData:FormData=new FormData();
